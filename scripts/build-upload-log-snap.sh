@@ -564,7 +564,7 @@ then
 
 	echo " "
 
-	ssh-keygen -f "/home/boschrexroth/.ssh/known_hosts" -R "[${ADDR}]:${SSH_PORT}" 2>&1 1>/dev/null
+	ssh-keygen -f "$HOME/.ssh/known_hosts" -R "${ADDR}" 2>&1 1>/dev/null
 
 	echo " "
 	echo -----------------------------------------------------------------
