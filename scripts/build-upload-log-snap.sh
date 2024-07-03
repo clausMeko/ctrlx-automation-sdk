@@ -564,6 +564,7 @@ then
 
 	echo " "
 
+  # needs you to not hash your known_hosts file. /etc/ssh/ssh_conf: # HashKnownHosts yes
 	ssh-keygen -f "$HOME/.ssh/known_hosts" -R "${ADDR}" 2>&1 1>/dev/null
 
 	echo " "
